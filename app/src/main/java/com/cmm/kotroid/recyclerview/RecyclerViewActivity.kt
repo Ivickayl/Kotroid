@@ -24,7 +24,7 @@ class RecyclerViewActivity : AppCompatActivity() {
 
     private fun generateFakeData() : ArrayList<ObjectDataSample>{
         return arrayListOf(
-            ObjectDataSample("Finfal Fantasy", 1997),
+            ObjectDataSample("Final Fantasy", 1997),
             ObjectDataSample("Pokemon Jaune", 1998),
             ObjectDataSample("Tales Of Symphonia", 2003),
             ObjectDataSample("Chrono Trigger", 1995),
