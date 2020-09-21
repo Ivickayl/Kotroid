@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.cmm.kotroid.recyclerview.RecyclerViewActivity
+import com.cmm.kotroid.secondactivity.SecondActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
