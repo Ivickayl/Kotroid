@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.cmm.kotroid.R
+import com.cmm.kotroid.database.MySecondObject
 
 class CustomAdapter (private val context : Context) : RecyclerView.Adapter<CustomAdapter.MyCustomViewHolder>() {
 
-    private val myData : ArrayList<ObjectDataSample> = ArrayList();
+    private val myData : ArrayList<MySecondObject> = ArrayList();
     private val inflater : LayoutInflater = LayoutInflater.from(context)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyCustomViewHolder {
@@ -28,9 +29,10 @@ class CustomAdapter (private val context : Context) : RecyclerView.Adapter<Custo
         return myData.size;
     }
 
-    fun rebuild(generateFakeData: ArrayList<ObjectDataSample>) {
+    fun rebuild(generateFakeData: ArrayList<MySecondObject>) {
         this.myData.clear()
         this.myData.addAll(generateFakeData)
+        this.notifyDataSetChanged()
     }
 
     inner class MyCustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

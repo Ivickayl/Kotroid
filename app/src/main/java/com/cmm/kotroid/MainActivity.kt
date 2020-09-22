@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.cmm.kotroid.glide.GlideActivity
 import com.cmm.kotroid.recyclerview.RecyclerViewActivity
 import com.cmm.kotroid.secondactivity.SecondActivity
 
@@ -15,6 +16,12 @@ class MainActivity : AppCompatActivity() {
 
     fun launchRecyclerView(view: View){
         val intent = Intent(this, RecyclerViewActivity::class.java)
+
+        startActivity(intent)
+    }
+
+    fun launchGlideView(view: View){
+        val intent = Intent(this, GlideActivity::class.java)
 
         startActivity(intent)
     }

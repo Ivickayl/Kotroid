@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- We are in the landscape case (values-land) -->
+    <integer name="number_of_columns">4</integer>
+    <color name="background_of_something">#00BB00</color>
+</resources>
